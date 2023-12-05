@@ -1,0 +1,61 @@
+s = 6Time for solve (N = 8): 56
+U1 = 0.995806
+U1 error = 4.51628e-06
+U2 = 0.215855
+U2 error = 2.26145e-05
+U3 = 0.05078
+U3 error = 1.31605e-07
+Omega = 0.0101585
+Omega error = 4.51405e-05
+ total time elapsed: 58
+s = 4Time for solve (N = 8): 58
+U1 = 0.979637
+U1 error = 3.27555e-06
+U2 = 0.318589
+U2 error = 2.70567e-06
+U3 = 0.0692514
+U3 error = 2.02501e-05
+Omega = 0.0216341
+Omega error = 3.57445e-06
+ total time elapsed: 118
+s = 3Time for solve (N = 8): 81
+U1 = 0.93905
+U1 error = 7.02144e-08
+U2 = 0.41694
+U2 error = 4.38578e-07
+U3 = 0.0782359
+U3 error = 5.25524e-05
+Omega = 0.0350217
+Omega error = 7.47151e-06
+ total time elapsed: 202
+s = 2.5Time for solve (N = 8): 92
+U1 = 0.877664
+U1 error = 1.6436e-05
+U2 = 0.495451
+U2 error = 2.02697e-06
+U3 = 0.0739288
+U3 error = 1.57996e-05
+Omega = 0.0454667
+Omega error = 1.49956e-05
+ total time elapsed: 297
+s = 2.1Time for solve (N = 8): 140
+U1 = 0.743496
+U1 error = 0.0066693
+U2 = 0.597331
+U2 error = 0.000252853
+U3 = 0.0418736
+U3 error = 0.190606
+Omega = 0.0499044
+Omega error = 0.0409459
+ total time elapsed: 440
+s = 2.01
+Time for solve (N = 8): 206
+U1 = 0.706599
+U1 error = 0.0783156
+U2 = 0.618631
+U2 error = 0.02518
+U3 = 0.0428742
+U3 error = 7.60927
+Omega = 0.0287335
+Omega error = 0.230406
+ total time elapsed: 649

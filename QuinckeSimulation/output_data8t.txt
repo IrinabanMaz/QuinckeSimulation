@@ -1,0 +1,70 @@
+Time for solve (N = 8): 76
+Error in MUT = [7.51052e-16, 3.04868e-15, -6.61382e-07]
+Error in MOmegaT = 8.09149e-08
+s = 3
+ total time elapsed: 79
+Time for solve (N = 8): 75
+Error in MUT = [-5.19414e-17, -8.27817e-16, -1.32988e-06]
+Error in MOmegaT = 2.05877e-07
+s = 2.9
+ total time elapsed: 157
+Time for solve (N = 8): 74
+Error in MUT = [4.67046e-15, 1.43588e-15, -2.79492e-06]
+Error in MOmegaT = 5.58511e-07
+s = 2.8
+ total time elapsed: 234
+Time for solve (N = 8): 75
+Error in MUT = [1.00929e-15, 1.66503e-15, -5.99983e-06]
+Error in MOmegaT = 1.6504e-06
+s = 2.7
+ total time elapsed: 311
+Time for solve (N = 8): 75
+Error in MUT = [2.24648e-17, 2.89194e-16, -1.2989e-05]
+Error in MOmegaT = 5.41794e-06
+s = 2.6
+ total time elapsed: 389
+Time for solve (N = 8): 86
+Error in MUT = [3.26688e-15, -4.3499e-16, -2.36407e-05]
+Error in MOmegaT = 2.04175e-05
+s = 2.5
+ total time elapsed: 478
+Time for solve (N = 8): 80
+Error in MUT = [-1.77564e-15, -2.02974e-15, -7.17328e-06]
+Error in MOmegaT = 8.96848e-05
+s = 2.4
+ total time elapsed: 561
+Time for solve (N = 8): 86
+Error in MUT = [1.92845e-15, 4.28534e-15, 0.000362541]
+Error in MOmegaT = 0.000465475
+s = 2.3
+ total time elapsed: 650
+Time for solve (N = 8): 103
+Error in MUT = [3.36418e-15, 3.05204e-15, 0.00126519]
+Error in MOmegaT = 0.00113349
+s = 2.25
+ total time elapsed: 756
+Time for solve (N = 8): 97
+Error in MUT = [4.71921e-15, 2.09811e-15, 0.00402301]
+Error in MOmegaT = 0.0028915
+s = 2.2
+ total time elapsed: 856
+Time for solve (N = 8): 97
+Error in MUT = [-1.2759e-15, 2.90159e-15, 0.0124284]
+Error in MOmegaT = 0.0077503
+s = 2.15
+ total time elapsed: 956
+Time for solve (N = 8): 103
+Error in MUT = [-1.70533e-15, -2.47877e-15, 0.0385987]
+Error in MOmegaT = 0.0220792
+s = 2.1
+ total time elapsed: 1062
+Time for solve (N = 8): 121
+Error in MUT = [9.32508e-16, -1.9844e-15, 0.127399]
+Error in MOmegaT = 0.0709331
+s = 2.05
+ total time elapsed: 1186
+Time for solve (N = 8): 174
+Error in MUT = [6.92025e-15, -1.16174e-14, 0.444201]
+Error in MOmegaT = 0.271425
+s = 2.01
+ total time elapsed: 1363

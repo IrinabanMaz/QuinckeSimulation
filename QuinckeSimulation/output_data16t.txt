@@ -1,0 +1,70 @@
+Time for solve (N = 16): 1252
+Error in MUT = [8.90291e-16, 1.54989e-14, -1.82084e-08]
+Error in MOmegaT = -2.15032e-09
+s = 3
+ total time elapsed: 1296
+Time for solve (N = 16): 1241
+Error in MUT = [5.46848e-17, 1.30985e-14, -1.04766e-08]
+Error in MOmegaT = -6.24622e-10
+s = 2.9
+ total time elapsed: 2578
+Time for solve (N = 16): 1240
+Error in MUT = [1.47565e-15, 8.63746e-15, 5.19479e-09]
+Error in MOmegaT = 4.31033e-09
+s = 2.8
+ total time elapsed: 3862
+Time for solve (N = 16): 1244
+Error in MUT = [1.37258e-15, 7.08559e-15, 7.17313e-08]
+Error in MOmegaT = 1.54584e-08
+s = 2.7
+ total time elapsed: 5148
+Time for solve (N = 16): 1246
+Error in MUT = [1.72664e-15, 1.03965e-14, -5.36855e-08]
+Error in MOmegaT = 1.08691e-08
+s = 2.6
+ total time elapsed: 6436
+Time for solve (N = 16): 1341
+Error in MUT = [-7.57312e-16, -5.27226e-15, 2.20057e-08]
+Error in MOmegaT = 9.10978e-09
+s = 2.5
+ total time elapsed: 7819
+Time for solve (N = 16): 2685
+Error in MUT = [-1.51585e-16, 2.99997e-15, -2.34559e-08]
+Error in MOmegaT = 8.01509e-09
+s = 2.4
+ total time elapsed: 10546
+Time for solve (N = 16): 1339
+Error in MUT = [2.54332e-15, 4.79589e-15, 8.00471e-08]
+Error in MOmegaT = 2.09569e-07
+s = 2.3
+ total time elapsed: 11929
+Time for solve (N = 16): 1343
+Error in MUT = [-1.26237e-15, -6.52405e-15, 1.51488e-06]
+Error in MOmegaT = 1.19814e-06
+s = 2.25
+ total time elapsed: 13314
+Time for solve (N = 16): 42347
+Error in MUT = [-1.75908e-16, 4.06197e-15, 9.95418e-06]
+Error in MOmegaT = 7.15865e-06
+s = 2.2
+ total time elapsed: 55703
+Time for solve (N = 16): 1583
+Error in MUT = [1.09335e-15, 9.48738e-15, 8.21489e-05]
+Error in MOmegaT = 5.18125e-05
+s = 2.15
+ total time elapsed: 57328
+Time for solve (N = 16): 1748
+Error in MUT = [-8.99504e-16, 6.7995e-15, 0.000778817]
+Error in MOmegaT = 0.000454618
+s = 2.1
+ total time elapsed: 59117
+Time for solve (N = 16): 2164
+Error in MUT = [6.83781e-15, 2.38477e-14, 0.0090119]
+Error in MOmegaT = 0.00524763
+s = 2.05
+ total time elapsed: 61321
+Time for solve (N = 16): 3950
+Error in MUT = [-1.52896e-14, 6.20226e-14, 0.10553]
+Error in MOmegaT = 0.0733999
+s = 2.01
+ total time elapsed: 65322

@@ -136,7 +136,13 @@
     <ClInclude Include="fluidtests.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="forcedata.txt" />
+    <Text Include="output_data16.txt" />
+    <Text Include="output_data16t.txt" />
     <Text Include="output_data8.txt" />
+    <Text Include="output_data8t.txt" />
+    <Text Include="output_data_in_plane16.txt" />
+    <Text Include="output_data_in_plane8.txt" />
     <Text Include="q-data.txt" />
     <Text Include="testfluid1.txt" />
     <Text Include="testfluid2.txt" />

@@ -55,5 +55,23 @@
     <Text Include="q-data.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="forcedata.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="output_data16.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="output_data8t.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="output_data16t.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="output_data_in_plane8.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="output_data_in_plane16.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

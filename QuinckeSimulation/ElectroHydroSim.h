@@ -1,6 +1,6 @@
 #pragma once
-#include "C:\Users\David\source\repos\ElectrostaticsQuincke\ElectrostaticsQuincke\LaplaceManyParticles.h"
-#include "C:\Users\David\source\repos\IrinabanMaz\SphericalHarmonics\MobilityProblem.h"
+#include "ElectrostaticsQuincke/ElectrostaticsQuincke/LaplaceManyParticles.h"
+#include "StokesSolver/MobilityProblem.h"
 
 
 LaplaceParticleSystem operator *(const StokesParticleSystem& Ps, const StokesParticleSystem& Qs)

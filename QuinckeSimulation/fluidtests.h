@@ -546,3 +546,70 @@ void testMobilityWilson3SphereInPlane(int index, int numterms, std::fstream& f)
 
 
 }
+
+void testMobilityWilson3SphereLinear(int index, int numterms, std::fstream& f)
+{
+	const double PI = 4.0 * std::atan(1.0);
+
+	std::array<double, 5> rs = { 4.0 , 3.0 , 2.4 , 2.1 , 2.05 };
+	std::array<double, 5> D0s = { 0.7194 , 0.6522 , 0.5946 , 0.5610 , 0.5561 };
+	std::array<double, 5> D1s = { 0.7755 , 0.7177 , 0.6663, 0.6337 , 0.6277 };
+	std::array<double, 5> Omegas = { 0.0586 , 0.1036, 0.1578 , 0.1919 , 0.1934 };
+
+	RectCoord middle(0.0, 0.0, 0.0);
+	RectCoord right(rs[index], 0.0, 0.0); //points on a line.
+	RectCoord left(-rs[index], 0.0, 0.0);
+
+
+	std::vector<SphereCoordSystem> centers;
+	centers.push_back(middle);
+	centers.push_back(right); // create centers with given side length.
+	centers.push_back(left);
+
+	//centers.push_back(RectCoord(0.0, 0.0, 10.0));
+
+	std::vector<RectCoord> forces;
+	forces.push_back(RectCoord(0.0, 6.0 * PI, 0.0)); //force on first particle, pointing to the origin.
+	forces.push_back(RectCoord(0.0, 6.0 * PI, 0.0));                    //force on second particle = 0.
+	forces.push_back(RectCoord(0.0, 6.0 * PI, 0.0));                    //force on third particle = 0.
+	//forces.push_back(RectCoord());
+
+	std::vector<RectCoord> torques;
+	torques.push_back(RectCoord());
+	torques.push_back(RectCoord());                  //zero torque on all particles.
+	torques.push_back(RectCoord());
+	//torques.push_back(RectCoord());
+
+	time_t time = std::time(0);
+	time_t time0 = time;
+
+	StokesParticleSystem ps(centers, 1);
+	//system = std::move(SolveMobilityManySphere(centers, forces, torques, 1,system, 30,1e-5));
+   //std::cout << "Time for first solve (N = 1): " << std::time(0) - time << "\n";
+
+	double U3 = 1.0, U3prev = 0.0;
+
+	QuadConstants consts(2 * numterms + 1, numterms + 1);
+
+	ps = StokesParticleSystem(centers, numterms);
+	time = std::time(0);
+	ps = SolveMobilityManySphere(centers, forces, torques, numterms, ps, 30, 1e-5);
+	f << "Time for solve (p = " << numterms << " , s = " << rs[index] << "): " << std::time(0) - time << "\n";
+
+	RectCoord particle1velocity = Integrate(&ps, &ps.particles[0].system, consts) / (4.0 * PI);
+	RectCoord particle2velocity = Integrate(&ps, &ps.particles[1].system, consts) / (4.0 * PI);
+	RectCoord particle2rotation = rotationCoefficient(discretize(&ps, &ps.particles[1].system, consts), ps.particles[1].system, consts) * 0.375 / PI;
+
+	f << "D0 = " << particle1velocity.y << "\n";
+	f << "D0 error = " << std::abs(1.0 / particle1velocity.y - D0s[index]) / D0s[index] << "\n";
+	f << "D1 = " << particle2velocity.y << "\n";
+	f << "D1 error = " << std::abs(1.0 / particle2velocity.y - D1s[index]) / D1s[index] << "\n";
+	f << "Omega = " << norm(particle2rotation) << "\n";
+	f << "Omega error = " << std::abs(norm(particle2rotation) - Omegas[index]) / Omegas[index] << "\n";
+
+	//std::cout << "Force on particle 1 after solving: " << Integrate(&system.traction, 1.0, system.particles[0].center) <<"\n";
+	//std::cout << "Force on particle 2 after solving: " << Integrate(&system.traction,  1.0, system.particles[1].center) <<"\n";
+	//std::cout << "Force on particle 3 after solving: " << Integrate(&system.traction, 1.0, system.particles[2].center) <<"\n";
+
+
+}
